@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Weather Subscription Service</h2>
+    <p>This application, crafted by Fares Naem, was developed as part of a job 
+      selection challenge for <strong>Deefinity Digital Consulting GmbH</strong>.</p>
+
+    <!-- Registration Form -->
+    <form id="register-form">
+      <h3>Register</h3>
+      <input type="text" id="first-name" placeholder="First Name" required>
+      <input type="text" id="last-name" placeholder="Last Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="text" id="city" placeholder="City Name" value="Berlin" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <!-- Login Form -->
+    <form id="login-form">
+      <h3>Login</h3>
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Subscribe/Unsubscribe Section -->
+    <div id="subscribe-section">
+      <h3>Manage Subscription</h3>
+      <button id="subscribe-button">Resubscribe</button>
+      <button id="unsubscribe-button" style="background-color: red;">Unsubscribe</button>
+      <p class="message" id="subscription-message"></p>
+    </div>
+
+    <p class="message" id="message"></p>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

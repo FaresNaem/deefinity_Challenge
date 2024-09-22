@@ -1,0 +1,16 @@
+get current user:
+curl -X 'GET' \
+  'http://127.0.0.1:8000/me' \
+   -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuYWVtZmFyZXNAZ21haWwuY29tIiwiZXhwIjoxNzI3MDA0NDU3fQ.0C6E3oW6EYsOEjHtsJ7Q_ZXlFfVATjICrm5fFe3eiLk'
+
+
+ Unsubscribe the User:
+ curl -X 'POST' \
+  'http://localhost:8000/unsubscribe' \
+  -H 'Authorization: Bearer your_generated_access_token'
+
+resubscribe the user
+  ____________________
+curl -X 'POST' \
+  'http://localhost:8000/resubscribe' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuYWVtZmFyZXNAZ21haWwuY29tIiwiZXhwIjoxNzI3MDA2ODIwfQ.j2NO68c5_79_XMluGDE1_bmTChcfsLWmNkt4Bh0UfHU'
