@@ -11,19 +11,23 @@ This project, **DeefinityWeatherMail**, was developed by Fares Naem as part of t
 - **Daily Weather Email**: Users receive an updated weather forecast every 14 days.
 
 ## Project Structure
-/DeefinityWeatherMail
-├── weatherMail
-│   ├── weatherMail_utilities.py
-├── templates
-│   ├── index.html
-├── static
-│   ├── app.js
-│   ├── style.css
-├── main.py.txt
-├── api_test.py.txt (test Units to test the api)
-├── requirements.txt
-├── users.json
+The **DeefinityWeatherMail** project is organized into several directories and files, each serving a specific purpose:
 
+- **weatherMail/**: Contains the core Python utility script, `weatherMail_utilities.py`, which handles weather-related operations such as fetching and processing weather data.
+  
+- **templates/**: This directory holds the HTML templates for the web interface. It includes `index.html`, which serves as the main landing page of the web app.
+  
+- **static/**: Stores static frontend assets like JavaScript and CSS files. `app.js` manages interactive frontend behavior, while `style.css` defines the styling for the app.
+
+- **main.py.txt**: The main logic for running the application is contained in this file. It provides the backbone of the weather-mailing system.
+
+- **api_test.py.txt**: Unit tests to verify the functionality of the weather API. This ensures that the API integration works as expected.
+
+- **requirements.txt**: Lists all Python dependencies needed to run the project. It can be used to install the necessary packages via `pip`.
+
+- **users.json**: A JSON file that contains user data, which might include sample users or subscriber information for weather alerts.
+
+This structure is designed to keep the project modular, separating backend logic, frontend assets, and configuration files for easier maintenance and scalability.
 
 ## How to Run the Project
 
